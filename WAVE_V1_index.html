@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080b14">
+<meta name="description" content="WAVE — discover independent music from Africa and around the world.">
+<title>WAVE — Feel every beat</title>
+<style>
+:root{--bg:#080b14;--panel:#111625;--panel2:#171e30;--text:#f5f7ff;--muted:#9ca8c2;--blue:#4ee7f5;--purple:#9270ff;--pink:#ff5fa2;--line:#283047}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#182044 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding-bottom:112px}button,input{font:inherit}button{cursor:pointer}.app{max-width:1100px;margin:auto;padding:20px 18px 35px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:10px;font-size:27px;font-weight:900;letter-spacing:2px}.logo{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--purple));display:grid;place-items:center;color:#07101c;font-size:24px;box-shadow:0 0 25px #4ee7f533}.tag{font-size:12px;color:var(--muted);margin-top:2px;letter-spacing:0}.pill{border:1px solid #3c4262;border-radius:99px;padding:8px 12px;font-size:12px;color:#d6dcf5;background:#111625}.hero{background:linear-gradient(120deg,#172b49,#35245c 65%,#41234b);border:1px solid #34385b;border-radius:25px;padding:24px 22px;margin-bottom:22px;position:relative;overflow:hidden}.hero:after{content:"♫";position:absolute;font-size:190px;line-height:1;right:8px;bottom:-48px;color:#ffffff0b;transform:rotate(12deg)}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(30px,6vw,48px);line-height:1.04;margin:10px 0}.hero p{color:#c7d0e8;max-width:490px;line-height:1.5;margin:0 0 18px}.searchrow{display:flex;gap:8px;max-width:630px;position:relative;z-index:1}.searchrow input{min-width:0;flex:1;background:#090e1bdc;border:1px solid #505b7b;color:white;border-radius:14px;padding:13px 15px;outline:none}.searchrow input:focus{border-color:var(--blue)}.primary{background:linear-gradient(120deg,var(--blue),#a6f8f7);color:#08101a;border:0;border-radius:13px;padding:12px 16px;font-weight:800}.tabs{display:flex;gap:8px;overflow:auto;padding:2px 0 16px;scrollbar-width:none}.tabs button{white-space:nowrap;border:1px solid var(--line);background:#111625;color:#bfc8df;padding:10px 14px;border-radius:99px}.tabs button.active{background:#d8fcff;color:#06101a;border-color:transparent;font-weight:800}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:18px 0 14px}.sectionhead h2{font-size:21px;margin:0}.sectionhead span{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.track{min-width:0;background:linear-gradient(145deg,#141b2b,#0f1421);border:1px solid #242c42;border-radius:18px;padding:10px;display:flex;gap:11px;align-items:center}.cover{width:76px;height:76px;flex:0 0 76px;border-radius:13px;object-fit:cover;background:linear-gradient(135deg,#283c69,#7c3e8e);color:white}.trackinfo{min-width:0;flex:1}.tracktitle{font-weight:800;font-size:14px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.artist{font-size:12px;color:var(--muted);margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.trackactions{display:flex;align-items:center;gap:7px;margin-top:9px}.play{border:0;border-radius:99px;background:var(--blue);color:#06111a;width:34px;height:34px;font-size:15px;font-weight:900}.heart{border:1px solid #38415b;background:#171e30;color:#c6cee3;border-radius:99px;width:34px;height:34px;font-size:17px}.heart.liked{color:#ff6b9f;border-color:#ff6b9f}.source{font-size:10px;color:#71809f;margin-top:7px}.status{padding:20px;border:1px dashed #37415d;border-radius:16px;color:var(--muted);line-height:1.5;text-align:center;grid-column:1/-1}.status strong{color:#e8ecff}.notice{font-size:12px;color:#8f9dbb;line-height:1.55;margin-top:25px;padding:14px;border:1px solid #242d44;border-radius:14px}.notice a{color:var(--blue)}.player{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#0b101df2;border-top:1px solid #303951;backdrop-filter:blur(18px);padding:10px max(14px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}.playerinner{max-width:1100px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(90px,1fr);align-items:center;gap:14px}.now{display:flex;align-items:center;gap:10px;min-width:0}.now img{width:48px;height:48px;object-fit:cover;border-radius:10px;background:#242d44}.nowtext{min-width:0}.nowtitle{font-size:13px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nowartist{font-size:11px;color:var(--muted);margin-top:4px}.controls{display:flex;align-items:center;gap:12px}.control{background:transparent;border:0;color:#eaf0ff;font-size:19px;padding:6px}.control.main{background:var(--blue);color:#07101a;width:42px;height:42px;border-radius:50%;font-size:18px}.progressbox{display:flex;align-items:center;gap:8px;color:#aab5cd;font-size:10px}.progress{width:100%;accent-color:var(--blue)}.vol{width:100%;accent-color:var(--blue)}.rightplayer{display:flex;gap:8px;align-items:center}.bottomnav{display:flex;justify-content:center;gap:26px;margin:24px 0 4px;color:#93a0bc;font-size:12px}.bottomnav span{cursor:pointer}.bottomnav .selected{color:var(--blue)}.tiny{font-size:11px;color:var(--muted)}@media(min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:34px}.cover{width:82px;height:82px;flex-basis:82px}}@media(max-width:500px){.app{padding:15px 12px 25px}.hero{padding:20px 16px}.searchrow{flex-direction:column}.searchrow .primary{width:100%}.playerinner{grid-template-columns:minmax(0,1fr) auto;gap:8px}.rightplayer{display:none}.controls{gap:4px}.now img{width:42px;height:42px}.nowtitle{max-width:150px}.grid{gap:9px}.track{padding:8px;gap:8px}.cover{width:60px;height:60px;flex-basis:60px}.tracktitle{font-size:12px}.artist{font-size:11px}.trackactions{margin-top:6px}.play,.heart{width:30px;height:30px}.bottomnav{gap:19px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><div class="logo">〰</div><div>WAVE<div class="tag">FEEL EVERY BEAT</div></div></div>
+    <div class="pill">🌍 Global + African sounds</div>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">Your sound, your world</div>
+    <h1>Find your next<br>favorite vibe.</h1>
+    <p>Discover independent sounds from Africa and around the world. Press play and let the music move you.</p>
+    <form class="searchrow" id="searchForm">
+      <input id="searchInput" aria-label="Search songs or artists" placeholder="Search songs, artists, Afrobeat…" autocomplete="off">
+      <button class="primary" type="submit">Search music ↗</button>
+    </form>
+  </section>
+  <nav class="tabs" aria-label="Music categories">
+    <button class="active" data-query="popular">✨ Discover</button>
+    <button data-query="afrobeat">🇳🇬 Afrobeat</button>
+    <button data-query="african music">🌍 African sounds</button>
+    <button data-query="hip hop">🎤 Hip-hop</button>
+    <button data-query="r&b soul">💜 R&amp;B / Soul</button>
+    <button data-query="electronic">⚡ Electronic</button>
+  </nav>
+  <div class="sectionhead"><h2 id="sectionTitle">Discover music</h2><span id="resultCount">Loading tracks…</span></div>
+  <section class="grid" id="trackGrid" aria-live="polite">
+    <div class="status">WAVE is loading music…<br><span class="tiny">Connect to the internet to discover tracks.</span></div>
+  </section>
+  <div class="bottomnav"><span class="selected" data-nav="home">⌂ Home</span><span data-nav="discover">⌕ Explore</span><span data-nav="favorites">♡ Favorites</span></div>
+  <div class="notice">
+    <strong>Music credits &amp; licensing</strong><br>
+    WAVE V1 uses the Jamendo discovery API for a demo catalogue. Track playback and availability depend on the source. Artists retain their rights; each track is subject to its own license. This prototype is for testing, not a claim to a commercial streaming catalog.
+    <br><a href="https://developer.jamendo.com/v3.0/docs" target="_blank" rel="noopener">API documentation</a> · <a href="https://devportal.jamendo.com/api_terms_of_use" target="_blank" rel="noopener">API terms</a>
+    <br><span class="tiny">Demo API key is for testing only. Before publishing, register your own application/client ID and review all licensing and attribution requirements.</span>
+  </div>
+</div>
+<div class="player">
+  <div class="playerinner">
+    <div class="now"><img id="nowCover" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100%25' height='100%25' fill='%23232e4b'/%3E%3Ctext x='50%25' y='58%25' font-size='46' text-anchor='middle' fill='%234ee7f5'%3E%E2%99%AB%3C/text%3E%3C/svg%3E"><div class="nowtext"><div class="nowtitle" id="nowTitle">Choose a track</div><div class="nowartist" id="nowArtist">WAVE player</div></div></div>
+    <div>
+      <div class="controls"><button class="control" id="prevBtn" aria-label="Previous track">⏮</button><button class="control main" id="playBtn" aria-label="Play or pause">▶</button><button class="control" id="nextBtn" aria-label="Next track">⏭</button></div>
+      <div class="progressbox"><span id="currentTime">0:00</span><input class="progress" id="progress" type="range" min="0" max="100" value="0" aria-label="Track progress"><span id="duration">0:00</span></div>
+    </div>
+    <div class="rightplayer"><span>🔊</span><input class="vol" id="volume" type="range" min="0" max="1" step=".01" value=".8" aria-label="Volume"></div>
+  </div>
+</div>
+<audio id="audio" preload="none" crossorigin="anonymous"></audio>
+<script>
+(() => {
+  'use strict';
+  // Jamendo's published demo client ID is for testing read-only API calls only.
+  // Replace it with your own registered client_id before publishing.
+  const CLIENT_ID = '709fa152';
+  const API = 'https://api.jamendo.com/v3.0/tracks/';
+  const grid = document.getElementById('trackGrid');
+  const audio = document.getElementById('audio');
+  const $ = id => document.getElementById(id);
+  let tracks = [], currentIndex = -1, activeQuery = 'popular', showingFavorites = false;
+  let favorites = new Set(JSON.parse(localStorage.getItem('wave-favorites') || '[]'));
+  let recent = [];
+  const fmt = s => { if (!Number.isFinite(s) || s < 0) return '0:00'; return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0'); };
+  const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function saveFavorites(){ localStorage.setItem('wave-favorites', JSON.stringify([...favorites])); }
+  function setStatus(message){ grid.innerHTML = `<div class="status">${message}</div>`; $('resultCount').textContent = ''; }
+  async function loadTracks(query='popular') {
+    activeQuery = query; showingFavorites = false;
+    document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active', b.dataset.query===query));
+    $('sectionTitle').textContent = query==='popular' ? 'Discover music' : `Sounds: ${query}`;
+    setStatus('Finding music for you…');
+    const params = new URLSearchParams({client_id:CLIENT_ID, format:'json', limit:'30', include:'musicinfo', imagesize:'300', order:'popularity_total'});
+    if(query!=='popular') params.set('search', query);
+    try {
+      const res = await fetch(API+'?'+params.toString());
+      if(!res.ok) throw new Error('Music service returned '+res.status);
+      const data = await res.json();
+      if(data.headers && data.headers.status==='failed') throw new Error(data.headers.error_message || 'Music service request failed');
+      tracks = (data.results || []).filter(t=>t.audio);
+      if(!tracks.length){ setStatus('No playable tracks found for this search. Try another artist or genre.'); $('resultCount').textContent='0 tracks'; return; }
+      renderTracks(tracks);
+    } catch(err) {
+      setStatus(`<strong>Couldn't load the music catalogue.</strong><br>${escapeHtml(err.message)}<br><br>Check your internet connection, then tap a category or search again. The demo API may also have usage restrictions.`);
+      $('resultCount').textContent='Unavailable';
+    }
+  }
+  function renderTracks(list) {
+    if(!list.length){setStatus('No favorites yet. Tap the ♡ on a track to save it here.');$('resultCount').textContent='0 tracks';return;}
+    $('resultCount').textContent = `${list.length} tracks`;
+    grid.innerHTML = list.map((t,i)=>{
+      const liked = favorites.has(String(t.id));
+      return `<article class="track">
+        <img class="cover" src="${escapeHtml(t.album_image || t.image || '')}" alt="" loading="lazy" onerror="this.style.opacity='.25'">
+        <div class="trackinfo">
+          <div class="tracktitle">${escapeHtml(t.name)}</div>
+          <div class="artist">${escapeHtml(t.artist_name)}</div>
+          <div class="trackactions"><button class="play" data-play="${i}" aria-label="Play ${escapeHtml(t.name)}">▶</button><button class="heart ${liked?'liked':''}" data-fav="${escapeHtml(t.id)}" aria-label="Toggle favorite">${liked?'♥':'♡'}</button></div>
+          <div class="source">Independent music · Jamendo</div>
+        </div>
+      </article>`;
+    }).join('');
+    grid.querySelectorAll('[data-play]').forEach(b=>b.addEventListener('click',()=>playTrack(list[Number(b.dataset.play)])));
+    grid.querySelectorAll('[data-fav]').forEach(b=>b.addEventListener('click',()=>toggleFavorite(b.dataset.fav)));
+  }
+  function toggleFavorite(id){
+    id=String(id); if(favorites.has(id)) favorites.delete(id); else favorites.add(id); saveFavorites();
+    if(showingFavorites) showFavorites(); else renderTracks(tracks);
+  }
+  function showFavorites(){
+    showingFavorites=true;
+    document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+    $('sectionTitle').textContent='Your favorites';
+    const list=tracks.filter(t=>favorites.has(String(t.id)));
+    // Favorites from previous searches are stored locally; show available cached tracks where possible.
+    renderTracks(list);
+    if(!list.length && favorites.size) setStatus('Your saved favorites are stored on this device. Search for the track again to play it.');
+  }
+  function playTrack(track){
+    if(!track || !track.audio){setStatus('This track does not currently provide a playable stream. Try another one.');return;}
+    currentIndex=tracks.findIndex(t=>String(t.id)===String(track.id));
+    audio.src=track.audio; audio.load();
+    $('nowTitle').textContent=track.name || 'Unknown track';
+    $('nowArtist').textContent=track.artist_name || 'Unknown artist';
+    $('nowCover').src=track.album_image || track.image || '';
+    audio.play().then(()=>{$('playBtn').textContent='Ⅱ';}).catch(()=>{$('playBtn').textContent='▶'; alert('Playback could not start. Tap play again, or choose another track. Some sources may block playback in your browser.');});
+    recent=[track,...recent.filter(t=>String(t.id)!==String(track.id))].slice(0,10);
+  }
+  $('playBtn').addEventListener('click',()=>{
+    if(!audio.src){if(tracks.length)playTrack(tracks[0]);return;}
+    if(audio.paused) audio.play().then(()=>$('playBtn').textContent='Ⅱ').catch(()=>{}); else audio.pause();
+  });
+  $('prevBtn').addEventListener('click',()=>{if(currentIndex>0)playTrack(tracks[currentIndex-1]);});
+  $('nextBtn').addEventListener('click',()=>{if(currentIndex<tracks.length-1)playTrack(tracks[currentIndex+1]);});
+  audio.addEventListener('play',()=>$('playBtn').textContent='Ⅱ');
+  audio.addEventListener('pause',()=>$('playBtn').textContent='▶');
+  audio.addEventListener('timeupdate',()=>{
+    $('currentTime').textContent=fmt(audio.currentTime);
+    $('duration').textContent=fmt(audio.duration);
+    $('progress').value=audio.duration ? audio.currentTime/audio.duration*100 : 0;
+  });
+  audio.addEventListener('ended',()=>{if(currentIndex<tracks.length-1)playTrack(tracks[currentIndex+1]);else $('playBtn').textContent='▶';});
+  $('progress').addEventListener('input',()=>{if(Number.isFinite(audio.duration))audio.currentTime=audio.duration*Number($('progress').value)/100;});
+  $('volume').addEventListener('input',()=>audio.volume=Number($('volume').value));
+  document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>loadTracks(b.dataset.query)));
+  $('searchForm').addEventListener('submit',e=>{e.preventDefault();const q=$('searchInput').value.trim();if(q)loadTracks(q);});
+  document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',()=>{
+    document.querySelectorAll('[data-nav]').forEach(n=>n.classList.toggle('selected',n===el));
+    if(el.dataset.nav==='favorites')showFavorites();
+    else if(el.dataset.nav==='discover'){ $('searchInput').focus();window.scrollTo({top:0,behavior:'smooth'});}
+    else loadTracks('popular');
+  }));
+  loadTracks('popular');
+})();
+</script>
+</body>
+</html>
